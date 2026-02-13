@@ -1,4 +1,4 @@
-/* ===== GLOBAL ===== */
+/* ====== GLOBAL ====== */
 * {
   box-sizing: border-box;
 }
@@ -15,15 +15,30 @@ body {
 }
 
 .main-container {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 50px;
 }
 
-/* HEADER */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ====== HEADER ====== */
+.site-header {
+  margin-bottom: 30px;
+}
+
 .site-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
   align-items: center;
 }
 
@@ -32,14 +47,17 @@ body {
 }
 
 .nav-links {
+  list-style: none;
   display: flex;
   gap: 68px;
-  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
 .nav-link {
+  display: inline-block;
   padding: 16px 0;
+  color: #000000;
   border-top: 2px solid transparent;
 }
 
@@ -48,13 +66,24 @@ body {
   border-top-color: var(--main-color);
 }
 
-/* SEARCH */
+/* ====== SEARCH SECTION ====== */
 .search-section {
   margin-top: 30px;
 }
 
+.main-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  margin: 0 0 35px 0;
+}
+
 .search-form {
   display: flex;
+  align-items: center;
   width: 377px;
   height: 49px;
   border: 1px solid var(--main-bg-color);
@@ -64,7 +93,8 @@ body {
 
 .search-icon {
   width: 50px;
-  background: var(--main-bg-color);
+  height: 49px;
+  background-color: var(--main-bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,15 +103,19 @@ body {
 .search-input {
   flex: 1;
   border: none;
+  outline: none;
+  font-size: 18px;
   font-weight: 700;
   padding-left: 10px;
 }
 
 .search-button {
-  background: var(--main-color);
+  background-color: var(--main-color);
   color: white;
   border: none;
+  height: 49px;
   padding: 0 16px;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -90,20 +124,28 @@ body {
   display: none;
 }
 
-/* FILTERS */
+/* ====== FILTERS + INFO ====== */
 .filters-section {
   margin-top: 35px;
 }
 
 .filters-line {
   display: flex;
-  gap: 15px;
   align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filters-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .filters-buttons {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .filter-button {
@@ -114,8 +156,10 @@ body {
   padding: 0 19px;
   border-radius: 25px;
   border: 2px solid #D9D9D9;
-  background: white;
+  background: #FFFFFF;
+  font-size: 17px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -126,9 +170,60 @@ body {
   color: var(--main-color);
 }
 
-/* HEBERGEMENTS + POPULAIRES */
+.info-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.info-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-circle i {
+  color: var(--main-color);
+  font-size: 12px;
+}
+
+.info-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* ====== ACCESSIBILITE ====== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ====== ETOILES ====== */
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+.card-link {
+  display: block;
+  color: inherit;
+}
+
+/* ====== HEBERGEMENTS + POPULAIRES ====== */
 .hebergements-and-populaires {
   display: flex;
+  justify-content: space-between;
   gap: 40px;
   margin-top: 35px;
 }
@@ -148,22 +243,25 @@ body {
   width: 32%;
 }
 
-/* CARDS */
-.card-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+.section-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
 }
 
+/* ====== HEBERGEMENTS CARDS ====== */
 .hebergements-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   margin-top: 30px;
 }
 
-.card {
-  background: white;
+.hebergement-card {
+  background: #FFFFFF;
   border-radius: 20px;
   padding: 5px;
-  box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .hebergement-card img {
@@ -174,8 +272,57 @@ body {
   border-top-right-radius: 20px;
 }
 
+.card-body {
+  padding: 8px 10px 10px;
+}
+
+.card-title {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+}
+
+.card-subtitle {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.card-rating {
+  display: flex;
+  gap: 2px;
+}
+
+/* Afficher plus */
+.show-more {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* ====== POPULAIRES ====== */
+.populaires-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.populaires-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
 .populaire-card {
   display: flex;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .populaire-card img {
@@ -187,18 +334,16 @@ body {
 }
 
 .pop-card-content {
-  padding: 10px 15px;
+  width: 67%;
+  padding: 10px 10px 5px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.neutral-star {
-  color: var(--main-bg-color);
-}
-/* ===== ACTIVITES (desktop) ===== */
+/* ====== ACTIVITES (desktop) ====== */
 .activites {
-  margin-top: 35px;
+  margin-top: 60px;
 }
 
 .activites-cards {
@@ -209,18 +354,51 @@ body {
 }
 
 .activite-card {
-  padding: 0;
+  background: #FFFFFF;
+  border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .activite-card img {
   width: 100%;
   height: 380px;
   object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
-.activity-title {
-  padding: 20px;
+.activite-card .card-title {
+  margin: 0;
+  padding: 20px 19px;
+}
+
+/* ====== FOOTER (desktop) ====== */
+.site-footer {
+  margin-top: 60px;
+  background: var(--main-bg-color);
+  padding: 45px 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-title {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: #000000;
 }
