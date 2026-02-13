@@ -40,38 +40,62 @@
 
         <!-- MAIN -->
         <main>
-<section class="search-section">
-    <h1 class="main-title">
-        Trouvez votre hébergement pour des vacances de rêve
-    </h1>
+            <!-- SEARCH -->
+            <section class="search-section">
+                <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="subtitle">En plein centre-ville ou en pleine nature</p>
 
-    <p class="subtitle">
-        En plein centre-ville ou en pleine nature
-    </p>
+                <form class="search-form" action="#" method="get">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    </div>
 
-    <form class="search-form" action="#" method="get">
+                    <input type="text" class="search-input" name="city" value="Marseille, France" aria-label="Ville">
 
-        <div class="search-icon">
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-        </div>
+                    <button type="submit" class="search-button">
+                        <span class="search-text">Rechercher</span>
+                        <i class="fa-solid fa-magnifying-glass search-glass" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </section>
 
-        <input 
-            type="text"
-            class="search-input"
-            name="city"
-            value="Marseille, France"
-            aria-label="Ville"
-        >
+            <!-- FILTERS + INFO -->
+            <section class="filters-section" aria-label="Filtres de recherche">
+                <div class="filters-line">
+                    <h2 class="filters-title">Filtres</h2>
 
-        <button type="submit" class="search-button">
-            <span class="search-text">Rechercher</span>
-            <i class="fa-solid fa-magnifying-glass search-glass" aria-hidden="true"></i>
-        </button>
+                    <div class="filters-buttons">
+                        <button class="filter-button" type="button">
+                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                            <span>Économique</span>
+                        </button>
 
-    </form>
-</section>
+                        <button class="filter-button" type="button">
+                            <i class="fa-solid fa-person" aria-hidden="true"></i>
+                            <span>Familial</span>
+                        </button>
 
-            <!-- SECTION HEBERGEMENTS -->
+                        <button class="filter-button" type="button">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                            <span>Romantique</span>
+                        </button>
+
+                        <button class="filter-button" type="button">
+                            <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                            <span>Nos pépites</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="info-bar">
+                    <div class="info-circle" aria-hidden="true">
+                        <i class="fa-solid fa-info"></i>
+                    </div>
+                    <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
+            <!-- SECTION HEBERGEMENTS (placeholder, on refait au commit suivant) -->
             <section id="hebergements">
                 <h2 class="section-title">Hébergements</h2>
 
@@ -81,58 +105,10 @@
                         <h3>Hôtel Annie Spratt</h3>
                         <p>Nuit à partir de 85€</p>
                     </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/aw-creative.jpg" alt="Chambres d’hôtes AW Creative">
-                        <h3>Chambres d’hôtes AW Creative</h3>
-                        <p>Nuit à partir de 71€</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/emile-guillemot.jpg" alt="Hôtel Le soleil du matin">
-                        <h3>Hôtel Le soleil du matin</h3>
-                        <p>Nuit à partir de 128€</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/febrian-zakaria.jpg" alt="Hôtel Febrian Zakaria">
-                        <h3>Hôtel Febrian Zakaria</h3>
-                        <p>Nuit à partir de 68€</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/febrian-zakaria2.jpg" alt="Hôtel Bleu et Blanc">
-                        <h3>Hôtel Bleu et Blanc</h3>
-                        <p>Nuit à partir de 68€</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/fred-kleber.jpg" alt="Hôtel Fred Kleber">
-                        <h3>Hôtel Fred Kleber</h3>
-                        <p>Nuit à partir de 90€</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/marcus-loke.jpg" alt="Hôtel Marcus Loke">
-                        <h3>Hôtel Marcus Loke</h3>
-                        <p>Nuit à partir de 102€</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/nicate-lee.jpg" alt="Hôtel Nicate Lee">
-                        <h3>Hôtel Nicate Lee</h3>
-                        <p>Nuit à partir de 75€</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/hebergements/reisetopia.jpg" alt="Hôtel Reisetopia">
-                        <h3>Hôtel Reisetopia</h3>
-                        <p>Nuit à partir de 120€</p>
-                    </div>
                 </div>
             </section>
 
-            <!-- SECTION ACTIVITES -->
+            <!-- SECTION ACTIVITES (placeholder, on refait au commit suivant) -->
             <section id="activites">
                 <h2 class="section-title">Activités</h2>
 
@@ -141,27 +117,11 @@
                         <img src="images/activites/florian-wehde.jpg" alt="Activité Florian Wehde">
                         <h3>Activité Florian Wehde</h3>
                     </div>
-
-                    <div class="card">
-                        <img src="images/activites/kilyan-sockalingum.jpg" alt="Activité Kilyan Sockalingum">
-                        <h3>Activité Kilyan Sockalingum</h3>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/activites/paul-hermann.jpg" alt="Activité Paul Hermann">
-                        <h3>Activité Paul Hermann</h3>
-                    </div>
-
-                    <div class="card">
-                        <img src="images/activites/reno-laithienne.jpg" alt="Activité Reno Laithienne">
-                        <h3>Activité Reno Laithienne</h3>
-                    </div>
                 </div>
             </section>
-
         </main>
 
-        <!-- FOOTER -->
+        <!-- FOOTER (placeholder, on refait au commit suivant) -->
         <footer>
             <p>&copy; 2026 Booki. Tous droits réservés.</p>
         </footer>
