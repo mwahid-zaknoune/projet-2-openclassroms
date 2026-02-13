@@ -12,8 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -49,15 +48,14 @@
 
         <form class="search-form">
           <div class="search-icon">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
           </div>
 
-          <input type="text" class="search-input"
-            value="Marseille, France" aria-label="Ville">
+          <input type="text" class="search-input" value="Marseille, France" aria-label="Ville">
 
           <button type="submit" class="search-button">
             <span class="search-text">Rechercher</span>
-            <i class="fa-solid fa-magnifying-glass search-glass"></i>
+            <i class="fa-solid fa-magnifying-glass search-glass" aria-hidden="true"></i>
           </button>
         </form>
       </section>
@@ -69,22 +67,22 @@
 
           <div class="filters-buttons">
             <button class="filter-button">
-              <i class="fa-solid fa-money-bill-wave"></i>
+              <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
               Économique
             </button>
 
             <button class="filter-button">
-              <i class="fa-solid fa-person"></i>
+              <i class="fa-solid fa-person" aria-hidden="true"></i>
               Familial
             </button>
 
             <button class="filter-button">
-              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-heart" aria-hidden="true"></i>
               Romantique
             </button>
 
             <button class="filter-button">
-              <i class="fa-solid fa-fire"></i>
+              <i class="fa-solid fa-fire" aria-hidden="true"></i>
               Nos pépites
             </button>
           </div>
@@ -92,7 +90,7 @@
 
         <div class="info-bar">
           <div class="info-circle">
-            <i class="fa-solid fa-info"></i>
+            <i class="fa-solid fa-info" aria-hidden="true"></i>
           </div>
           <p class="info-text">
             Plus de 500 logements sont disponibles dans cette ville
@@ -111,16 +109,16 @@
 
             <a class="card-link" href="#">
               <article class="card hebergement-card">
-                <img src="images/hebergements/marcus-loke.jpg" alt="">
+                <img src="images/hebergements/marcus-loke.jpg" alt="Auberge La Canebière">
                 <div class="card-body">
                   <h3 class="card-title">Auberge La Canebière</h3>
                   <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
-                  <div class="card-rating">
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                  <div class="card-rating" aria-label="Note de 4 sur 5">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                   </div>
                 </div>
               </article>
@@ -135,24 +133,24 @@
         <section class="populaires">
           <div class="populaires-title">
             <h2 class="section-title">Les plus populaires</h2>
-            <i class="fa-solid fa-chart-line"></i>
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
           </div>
 
           <div class="populaires-cards">
             <a class="card-link" href="#">
               <article class="card populaire-card">
-                <img src="images/hebergements/emile-guillemot.jpg" alt="">
+                <img src="images/hebergements/emile-guillemot.jpg" alt="Hôtel Le soleil du matin">
                 <div class="pop-card-content">
                   <div>
                     <h3 class="card-title">Hôtel Le soleil du matin</h3>
                     <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                   </div>
-                  <div class="card-rating">
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star"></i>
-                    <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                  <div class="card-rating" aria-label="Note de 4 sur 5">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                   </div>
                 </div>
               </article>
@@ -162,9 +160,47 @@
 
       </div>
 
+      <!-- ACTIVITES -->
+      <section id="activites" class="activites">
+        <h2 class="section-title">Activités à Marseille</h2>
+
+        <div class="activites-cards">
+
+          <a class="card-link" href="#">
+            <article class="card activite-card">
+              <img src="images/activites/reno-laithienne.jpg" alt="Vieux-Port">
+              <h3 class="card-title activity-title">Vieux-Port</h3>
+            </article>
+          </a>
+
+          <a class="card-link" href="#">
+            <article class="card activite-card">
+              <img src="images/activites/paul-hermann.jpg" alt="Fort de Pomègues">
+              <h3 class="card-title activity-title">Fort de Pomègues</h3>
+            </article>
+          </a>
+
+          <a class="card-link" href="#">
+            <article class="card activite-card">
+              <img src="images/activites/kilyan-sockalingum.jpg" alt="Parc national des Calanques">
+              <h3 class="card-title activity-title">Parc national des Calanques</h3>
+            </article>
+          </a>
+
+          <a class="card-link" href="#">
+            <article class="card activite-card">
+              <img src="images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde">
+              <h3 class="card-title activity-title">Notre-Dame-de-la-Garde</h3>
+            </article>
+          </a>
+
+        </div>
+      </section>
+
     </main>
 
   </div>
 </body>
+
 </html>
 
