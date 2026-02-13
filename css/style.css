@@ -402,3 +402,47 @@ a {
 .footer-links a {
   color: #000000;
 }
+
+/* ====== RESPONSIVE TABLETTE (<= 1024px) ====== */
+@media (max-width: 1024px) {
+
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements,
+  .populaires {
+    width: 100%;
+  }
+
+  .populaires {
+    margin-top: 50px;
+  }
+
+  /* Populaires en ligne (3 cartes) */
+  .populaires-cards {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .populaires-cards .card-link {
+    width: 33.33%;
+  }
+
+  /* Ajustement hauteur image populaire pour que ce soit propre en ligne */
+  .populaire-card img {
+    height: 146px;
+  }
+
+  /* Activités un peu moins hautes en tablette */
+  .activite-card img {
+    height: 300px;
+  }
+}
+
+/* ====== RESPONSIVE MOBILE (<768px) ====== */
+/* Étape 8 */
+@media (max-width: 767.98px) {
+  /* ... */
+}
+
