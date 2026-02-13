@@ -2,131 +2,169 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booki</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="main-container">
+  <div class="main-container">
 
-        <!-- HEADER -->
-        <header class="site-header">
-            <nav class="site-nav">
-                <a href="#" class="logo-link">
-                    <img src="images/logo/Booki.png" alt="Logo Booki" class="logo">
-                </a>
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="#" class="logo-link">
+          <img src="images/logo/Booki.png" alt="Logo Booki" class="logo">
+        </a>
 
-                <ul class="nav-links">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hebergements">Hébergements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activites">Activités</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#hebergements">Hébergements</a></li>
+          <li><a class="nav-link" href="#activites">Activités</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- MAIN -->
-        <main>
-            <!-- SEARCH -->
-            <section class="search-section">
-                <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+    <main>
 
-                <form class="search-form" action="#" method="get">
-                    <div class="search-icon">
-                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                    </div>
+      <!-- SEARCH -->
+      <section class="search-section">
+        <h1 class="main-title">
+          Trouvez votre hébergement pour des vacances de rêve
+        </h1>
 
-                    <input type="text" class="search-input" name="city" value="Marseille, France" aria-label="Ville">
+        <p class="subtitle">
+          En plein centre-ville ou en pleine nature
+        </p>
 
-                    <button type="submit" class="search-button">
-                        <span class="search-text">Rechercher</span>
-                        <i class="fa-solid fa-magnifying-glass search-glass" aria-hidden="true"></i>
-                    </button>
-                </form>
-            </section>
+        <form class="search-form">
+          <div class="search-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
 
-            <!-- FILTERS + INFO -->
-            <section class="filters-section" aria-label="Filtres de recherche">
-                <div class="filters-line">
-                    <h2 class="filters-title">Filtres</h2>
+          <input type="text" class="search-input"
+            value="Marseille, France" aria-label="Ville">
 
-                    <div class="filters-buttons">
-                        <button class="filter-button" type="button">
-                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
-                            <span>Économique</span>
-                        </button>
+          <button type="submit" class="search-button">
+            <span class="search-text">Rechercher</span>
+            <i class="fa-solid fa-magnifying-glass search-glass"></i>
+          </button>
+        </form>
+      </section>
 
-                        <button class="filter-button" type="button">
-                            <i class="fa-solid fa-person" aria-hidden="true"></i>
-                            <span>Familial</span>
-                        </button>
+      <!-- FILTERS -->
+      <section class="filters-section">
+        <div class="filters-line">
+          <h2 class="filters-title">Filtres</h2>
 
-                        <button class="filter-button" type="button">
-                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                            <span>Romantique</span>
-                        </button>
+          <div class="filters-buttons">
+            <button class="filter-button">
+              <i class="fa-solid fa-money-bill-wave"></i>
+              Économique
+            </button>
 
-                        <button class="filter-button" type="button">
-                            <i class="fa-solid fa-fire" aria-hidden="true"></i>
-                            <span>Nos pépites</span>
-                        </button>
-                    </div>
+            <button class="filter-button">
+              <i class="fa-solid fa-person"></i>
+              Familial
+            </button>
+
+            <button class="filter-button">
+              <i class="fa-solid fa-heart"></i>
+              Romantique
+            </button>
+
+            <button class="filter-button">
+              <i class="fa-solid fa-fire"></i>
+              Nos pépites
+            </button>
+          </div>
+        </div>
+
+        <div class="info-bar">
+          <div class="info-circle">
+            <i class="fa-solid fa-info"></i>
+          </div>
+          <p class="info-text">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
+      </section>
+
+      <!-- HEBERGEMENTS + POPULAIRES -->
+      <div class="hebergements-and-populaires">
+
+        <!-- HEBERGEMENTS -->
+        <section id="hebergements" class="hebergements">
+          <h2 class="section-title">Hébergements à Marseille</h2>
+
+          <div class="hebergements-cards">
+
+            <a class="card-link" href="#">
+              <article class="card hebergement-card">
+                <img src="images/hebergements/marcus-loke.jpg" alt="">
+                <div class="card-body">
+                  <h3 class="card-title">Auberge La Canebière</h3>
+                  <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                  </div>
                 </div>
+              </article>
+            </a>
 
-                <div class="info-bar">
-                    <div class="info-circle" aria-hidden="true">
-                        <i class="fa-solid fa-info"></i>
-                    </div>
-                    <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+
+          <a class="show-more" href="#">Afficher plus</a>
+        </section>
+
+        <!-- POPULAIRES -->
+        <section class="populaires">
+          <div class="populaires-title">
+            <h2 class="section-title">Les plus populaires</h2>
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+
+          <div class="populaires-cards">
+            <a class="card-link" href="#">
+              <article class="card populaire-card">
+                <img src="images/hebergements/emile-guillemot.jpg" alt="">
+                <div class="pop-card-content">
+                  <div>
+                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star"></i>
+                  </div>
                 </div>
-            </section>
+              </article>
+            </a>
+          </div>
+        </section>
 
-            <!-- SECTION HEBERGEMENTS (placeholder, on refait au commit suivant) -->
-            <section id="hebergements">
-                <h2 class="section-title">Hébergements</h2>
+      </div>
 
-                <div class="hebergements-cards">
-                    <div class="card">
-                        <img src="images/hebergements/annie-spratt.jpg" alt="Hôtel Annie Spratt">
-                        <h3>Hôtel Annie Spratt</h3>
-                        <p>Nuit à partir de 85€</p>
-                    </div>
-                </div>
-            </section>
+    </main>
 
-            <!-- SECTION ACTIVITES (placeholder, on refait au commit suivant) -->
-            <section id="activites">
-                <h2 class="section-title">Activités</h2>
-
-                <div class="activites-cards">
-                    <div class="card">
-                        <img src="images/activites/florian-wehde.jpg" alt="Activité Florian Wehde">
-                        <h3>Activité Florian Wehde</h3>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- FOOTER (placeholder, on refait au commit suivant) -->
-        <footer>
-            <p>&copy; 2026 Booki. Tous droits réservés.</p>
-        </footer>
-
-    </div>
+  </div>
 </body>
-
 </html>
+
