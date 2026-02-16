@@ -1,0 +1,39 @@
+@media (max-width: 1024px) {
+
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements,
+  .populaires {
+    width: 100%;
+  }
+
+  .populaires {
+    margin-top: 50px;
+  }
+
+  /* Populaires sur une ligne (3 cartes) */
+  .populaires-cards {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .populaires-cards .card-link {
+    width: 33.33%;
+  }
+
+  /* pour que les cartes prennent toute la hauteur de la rangée */
+  .populaire-card {
+    height: 100%;
+  }
+
+  .populaire-card img {
+    height: 146px;
+  }
+
+  /* Activités un peu moins hautes */
+  .activite-card img {
+    height: 300px;
+  }
+}

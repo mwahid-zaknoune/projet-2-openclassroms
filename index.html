@@ -5,21 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Booki</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tablette.css" media="(max-width: 1024px)" />
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 767.98px)" />
 </head>
 
 <body>
   <div class="main-container">
 
-    <!-- HEADER -->
     <header class="site-header">
       <nav class="site-nav">
         <a href="#" class="logo-link">
@@ -27,35 +26,25 @@
         </a>
 
         <ul class="nav-links">
-          <li class="nav-item">
-            <a class="nav-link" href="#hebergements">Hébergements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#activites">Activités</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#hebergements">Hébergements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activites">Activités</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
 
-      <!-- SEARCH -->
       <section class="search-section">
         <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="subtitle">En plein centre-ville ou en pleine nature</p>
 
         <form class="search-form" action="#" method="get">
-          <div class="search-icon">
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <div class="search-icon" aria-hidden="true">
+            <i class="fa-solid fa-location-dot"></i>
           </div>
 
-          <input
-            type="text"
-            class="search-input"
-            name="city"
-            value="Marseille, France"
-            aria-label="Ville"
-          />
+          <label class="sr-only" for="city">Ville</label>
+          <input id="city" type="text" class="search-input" name="city" value="Marseille, France" />
 
           <button type="submit" class="search-button">
             <span class="search-text">Rechercher</span>
@@ -64,47 +53,26 @@
         </form>
       </section>
 
-      <!-- FILTERS + INFO -->
       <section class="filters-section">
         <div class="filters-line">
           <h2 class="filters-title">Filtres</h2>
 
           <div class="filters-buttons">
-            <button class="filter-button" type="button">
-              <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
-              Économique
-            </button>
-
-            <button class="filter-button" type="button">
-              <i class="fa-solid fa-person" aria-hidden="true"></i>
-              Familial
-            </button>
-
-            <button class="filter-button" type="button">
-              <i class="fa-solid fa-heart" aria-hidden="true"></i>
-              Romantique
-            </button>
-
-            <button class="filter-button" type="button">
-              <i class="fa-solid fa-fire" aria-hidden="true"></i>
-              Nos pépites
-            </button>
+            <button class="filter-button" type="button"><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Économique</button>
+            <button class="filter-button" type="button"><i class="fa-solid fa-person" aria-hidden="true"></i>Familial</button>
+            <button class="filter-button" type="button"><i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</button>
+            <button class="filter-button" type="button"><i class="fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</button>
           </div>
         </div>
 
         <div class="info-bar">
-          <div class="info-circle">
-            <i class="fa-solid fa-info" aria-hidden="true"></i>
-            <span class="sr-only">Information</span>
-          </div>
+          <div class="info-circle" aria-hidden="true"><i class="fa-solid fa-info"></i></div>
           <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </section>
 
-      <!-- HEBERGEMENTS + POPULAIRES -->
       <div class="hebergements-and-populaires">
 
-        <!-- HEBERGEMENTS -->
         <section class="hebergements" id="hebergements">
           <h2 class="section-title">Hébergements à Marseille</h2>
 
@@ -112,7 +80,7 @@
 
             <a class="card-link" href="#">
               <article class="hebergement-card">
-                <img src="images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/annie-spratt.jpg" alt="Hôtel du port" />
                 <div class="card-body">
                   <h3 class="card-title">Hôtel du port</h3>
                   <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
@@ -130,7 +98,7 @@
 
             <a class="card-link" href="#">
               <article class="hebergement-card">
-                <img src="images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/fred-kleber.jpg" alt="Hôtel Chez Amina" />
                 <div class="card-body">
                   <h3 class="card-title">Hôtel Chez Amina</h3>
                   <p class="card-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
@@ -148,7 +116,7 @@
 
             <a class="card-link" href="#">
               <article class="hebergement-card">
-                <img src="images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/reisetopia.jpg" alt="Hôtel Les mouettes" />
                 <div class="card-body">
                   <h3 class="card-title">Hôtel Les mouettes</h3>
                   <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
@@ -166,7 +134,7 @@
 
             <a class="card-link" href="#">
               <article class="hebergement-card">
-                <img src="images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/marcus-loke.jpg" alt="Hôtel de la mer" />
                 <div class="card-body">
                   <h3 class="card-title">Hôtel de la mer</h3>
                   <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
@@ -184,7 +152,7 @@
 
             <a class="card-link" href="#">
               <article class="hebergement-card">
-                <img src="images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/nicate-lee.jpg" alt="Auberge La Canebière" />
                 <div class="card-body">
                   <h3 class="card-title">Auberge La Canebière</h3>
                   <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
@@ -202,7 +170,7 @@
 
             <a class="card-link" href="#">
               <article class="hebergement-card">
-                <img src="images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/febrian-zakaria.jpg" alt="Auberge Le Panier" />
                 <div class="card-body">
                   <h3 class="card-title">Auberge Le Panier</h3>
                   <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
@@ -223,7 +191,6 @@
           <a class="show-more" href="#">Afficher plus</a>
         </section>
 
-        <!-- POPULAIRES -->
         <section class="populaires">
           <div class="populaires-title">
             <h2 class="section-title">Les plus populaires</h2>
@@ -234,7 +201,7 @@
 
             <a class="card-link" href="#">
               <article class="populaire-card">
-                <img src="images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/emile-guillemot.jpg" alt="Hôtel Le soleil du matin" />
                 <div class="pop-card-content">
                   <div class="pop-card-text">
                     <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -254,7 +221,7 @@
 
             <a class="card-link" href="#">
               <article class="populaire-card">
-                <img src="images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/aw-creative.jpg" alt="Chambres d’hôtes Au cœur de l’eau" />
                 <div class="pop-card-content">
                   <div class="pop-card-text">
                     <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -274,7 +241,7 @@
 
             <a class="card-link" href="#">
               <article class="populaire-card">
-                <img src="images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
+                <img src="images/hebergements/febrian-zakaria2.jpg" alt="Hôtel Bleu et Blanc" />
                 <div class="pop-card-content">
                   <div class="pop-card-text">
                     <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -297,46 +264,19 @@
 
       </div>
 
-      <!-- ACTIVITES -->
       <section class="activites" id="activites">
         <h2 class="section-title">Activités à Marseille</h2>
 
         <div class="activites-cards">
-
-          <a class="card-link" href="#">
-            <article class="activite-card">
-              <img src="images/activites/reno-laithienne.jpg" alt="Image de l’activité montrant le Vieux-Port" />
-              <h3 class="card-title">Vieux-Port</h3>
-            </article>
-          </a>
-
-          <a class="card-link" href="#">
-            <article class="activite-card">
-              <img src="images/activites/paul-hermann.jpg" alt="Image de l’activité montrant le Fort de Pomègues" />
-              <h3 class="card-title">Fort de Pomègues</h3>
-            </article>
-          </a>
-
-          <a class="card-link" href="#">
-            <article class="activite-card">
-              <img src="images/activites/kilyan-sockalingum.jpg" alt="Image de l’activité montrant les Îles du Frioul" />
-              <h3 class="card-title">Îles du Frioul</h3>
-            </article>
-          </a>
-
-          <a class="card-link" href="#">
-            <article class="activite-card">
-              <img src="images/activites/florian-wehde.jpg" alt="Image de l’activité montrant le Parc National des Calanques" />
-              <h3 class="card-title">Parc National des Calanques</h3>
-            </article>
-          </a>
-
+          <a class="card-link" href="#"><article class="activite-card"><img src="images/activites/reno-laithienne.jpg" alt="Vieux-Port" /><h3 class="card-title">Vieux-Port</h3></article></a>
+          <a class="card-link" href="#"><article class="activite-card"><img src="images/activites/paul-hermann.jpg" alt="Fort de Pomègues" /><h3 class="card-title">Fort de Pomègues</h3></article></a>
+          <a class="card-link" href="#"><article class="activite-card"><img src="images/activites/kilyan-sockalingum.jpg" alt="Îles du Frioul" /><h3 class="card-title">Îles du Frioul</h3></article></a>
+          <a class="card-link" href="#"><article class="activite-card"><img src="images/activites/florian-wehde.jpg" alt="Parc National des Calanques" /><h3 class="card-title">Parc National des Calanques</h3></article></a>
         </div>
       </section>
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="footer-column">
         <h3 class="footer-title">À propos</h3>
@@ -367,4 +307,5 @@
   </div>
 </body>
 </html>
+
 
