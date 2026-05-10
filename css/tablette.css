@@ -34,22 +34,23 @@
     object-fit: cover;
   }
 
-  /* Correction ACTIVITÉS tablette */
+ /* ACTIVITES */
 
-  .activites-cards {
-    display: flex;
-    gap: 20px;
-  }
+.activites-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
 
-  .activite-card {
-    width: 100%;
-  }
+.activite-card {
+  height: 330px;
+}
 
-  .activite-card img {
-    height: 270px;
-    object-fit: cover;
-  }
+.activite-card img {
+  height: 270px;
 
+  object-fit: cover;
+  object-position: center;
 }
 
 

@@ -321,8 +321,11 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
 }
 
-/* ====== ACTIVITES (desktop) ====== */
-.activites { margin-top: 60px; }
+/* ====== ACTIVITES ====== */
+
+.activites {
+  margin-top: 60px;
+}
 
 .activites-cards {
   margin-top: 30px;
@@ -332,49 +335,33 @@ a { color: inherit; text-decoration: none; }
 }
 
 .activite-card {
+  height: 440px;
   background: #FFFFFF;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .activite-card img {
   width: 100%;
   height: 380px;
+
   object-fit: cover;
+  object-position: center;
+
+  flex-shrink: 0;
+  display: block;
 }
 
 .activite-card .card-title {
+  height: 60px;
+
   margin: 0;
-  padding: 20px 19px;
-}
+  padding: 0 19px;
 
-/* ====== FOOTER (desktop) ====== */
-.site-footer {
-  margin-top: 60px;
-  background: var(--main-bg-color);
-  padding: 45px 50px;
   display: flex;
-  gap: 30px;
+  align-items: center;
 }
-
-.footer-column { flex: 1; }
-
-.footer-title {
-  margin: 0 0 15px 0;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.footer-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-
-
-
